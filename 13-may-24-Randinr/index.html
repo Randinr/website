@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>Menghitung Luas dan Keliling Segitiga</title>
+  <link rel="icon" href="assets/img/calculator_18846.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style_mediumScreen.css" />
+  <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <section class="container">
+    <div class="choose__rumus">
+      <div class="button__select__rumus select_rumus">
+        <h3 class="text__center">Luas Segitiga</h3>
+      </div>
+      <div class="button__select__rumus select_rumus">
+        <h3 class="text__center">Keliling Segitiga</h3>
+      </div>
+    </div>
+
+    <div class="img__container">
+      <img src="assets/img/luassegitiga.jpg" alt="Luas Segitiga" class="img__segitiga" id="img__luas" />
+      <img src="assets/img/kelilingsegitiga.jpg" alt="Keliling Segitiga" class="img__segitiga" id="img__keliling" />
+    </div>
+
+    <hr />
+    <div class="form__wrapper">
+      <div id="form__luas" class="form__section">
+        <h1 class="text__heading text__center">Hitung Luas Segitiga</h1>
+        <form class="form__container" id="formLuasSegitiga">
+          <label for="alas" class="form__label">Alas</label>
+          <input class="form__input" type="number" name="alas" id="alas" placeholder="Masukkan alas segitiga"
+            required />
+          <label for="tinggi" class="form__label">Tinggi</label>
+          <input class="form__input" type="number" name="tinggi" id="tinggi" placeholder="Masukkan tinggi segitiga"
+            required />
+          <center>
+            <button class="form__button" type="submit">Hitung</button>
+            <button class="form__button__reset" type="reset">Reset</button>
+          </center>
+
+          <div class="hasil__hitung__segitiga text_left">
+            <h5>Hasil Luas dari Segitiga :</h5>
+            <p id="hasilLuas"></p>
+          </div>
+        </form>
+      </div>
+
+      <div id="form__keliling" class="form__section">
+        <h1 class="text__heading text__center">Hitung Keliling Segitiga</h1>
+        <form class="form__container" id="formKelilingSegitiga">
+          <label for="sisi a" class="form__label">Sisi A</label>
+          <input class="form__input" type="number" name="sisiA" id="sisiA" placeholder="Masukkan Sisi A segitiga"
+            required />
+          <label for="sisi b" class="form__label">Sisi B</label>
+          <input class="form__input" type="number" name="sisiB" id="sisiB" placeholder="Masukkan Sisi B segitiga"
+            required />
+          <label for="sisi c" class="form__label">Sisi C</label>
+          <input class="form__input" type="number" name="sisiC" id="sisiC" placeholder="Masukkan Sisi C segitiga"
+            required />
+          <center>
+            <button class="form__button" type="submit">Hitung</button>
+            <button class="form__button__reset" type="reset">Reset</button>
+          </center>
+
+          <div class="hasil__hitung__segitiga text_left">
+            <h5>Hasil Keliling dari Segitiga :<br />
+            <p id="hasilKeliling"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
